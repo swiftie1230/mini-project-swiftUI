@@ -11,6 +11,8 @@
 		B409414D29A5B76000A85CF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409414C29A5B76000A85CF2 /* ContentView.swift */; };
 		B409414F29A5B76300A85CF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B409414E29A5B76300A85CF2 /* Assets.xcassets */; };
 		B409415229A5B76300A85CF2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B409415129A5B76300A85CF2 /* Preview Assets.xcassets */; };
+		B409415929A5F0E800A85CF2 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409415829A5F0E800A85CF2 /* CircleImage.swift */; };
+		B409415B29A5F18C00A85CF2 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409415A29A5F18C00A85CF2 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		B409414C29A5B76000A85CF2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B409414E29A5B76300A85CF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B409415129A5B76300A85CF2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B409415829A5F0E800A85CF2 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		B409415A29A5F18C00A85CF2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 				B409414A29A5B76000A85CF2 /* mini_project_swiftUIApp.swift */,
 				B409414C29A5B76000A85CF2 /* ContentView.swift */,
 				B409414E29A5B76300A85CF2 /* Assets.xcassets */,
+				B409415829A5F0E800A85CF2 /* CircleImage.swift */,
+				B409415A29A5F18C00A85CF2 /* MapView.swift */,
 				B409415029A5B76300A85CF2 /* Preview Content */,
 			);
 			path = mini_project_swiftUI;
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B409414D29A5B76000A85CF2 /* ContentView.swift in Sources */,
+				B409415B29A5F18C00A85CF2 /* MapView.swift in Sources */,
 				B409414B29A5B76000A85CF2 /* mini_project_swiftUIApp.swift in Sources */,
+				B409415929A5F0E800A85CF2 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
