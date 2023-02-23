@@ -27,6 +27,16 @@ struct Landmark: Hashable, Codable, Identifiable {
     var state: String
     var description: String
     var isFavorite: Bool
+    var isFeatured: Bool
+    
+    var category: Category
+    
+    // The landmarkData.json file already includes a category value for each landmark with one of three string values. By matching the names in the data file, you can rely on the structure’s Codable conformance to load the data.
+    enum Category: String, CaseIterable, Codable {
+        case lakes = "Lakes"
+        case rivers = "Rivers"
+        case mountains = "Mountains"
+    }
     
     // private
     // : 선언된 괄호 -{} 안에서만 접근이 가능합니다.
@@ -34,6 +44,7 @@ struct Landmark: Hashable, Codable, Identifiable {
     // : Landmark 내 접근 가능한 내부 함수를 통하여 사용할 수는 있음 !
     // : 만약 .swift 파일의 최상단 import 부분 밑에 private 변수를 선언할 경우에는 해당 swift파일의 어디에서든 사용 가능하게 됩니다.
     private var imageName: String
+    
     var image: Image {
         Image(imageName)
     }
