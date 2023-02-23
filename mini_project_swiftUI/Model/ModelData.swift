@@ -9,9 +9,12 @@ import Foundation
 import Combine
 
 // SwiftUI subscribes to your observable object, and updates any views that need refreshing when the data changes.
+// Stored the landmark data in an observable object
+// final을 붙이면 하위 클래스에서 오버라이딩이 불가능하다.
 final class ModelData: ObservableObject {
     // create an array of landmarks that you initialize from landmark.json.
     // An observable object needs to publish any changes to its data, so that its subscribers can pick up the change.
+    // publish 한 landmarks에 대하여 ObserveredObject 가 계속 지켜보면서 변화를 캐치하고 그 변화를 적용한다고 생각하면 된다.
     @Published var landmarks: [Landmark] = load("landmarkData.json")
 }
 

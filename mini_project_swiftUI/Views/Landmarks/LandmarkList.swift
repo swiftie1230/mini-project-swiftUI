@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct LandmarkList: View {
+    // environmentObject를 사용하면 ObservableObject 객체를 전달할 필요 없이 모든 뷰에서 접근이 가능하다.
     @EnvironmentObject var modelData: ModelData
+    
+    // Toggle()의 현재 값을 저장하는 데 사용할 @State Boolean 속성을 정의
     @State private var showFavoritesOnly = false
     
     var filteredLandmarks : [Landmark] {
@@ -42,6 +45,7 @@ struct LandmarkList: View {
 
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
+        // The modelData property gets its value automatically, as long as the environmentObject(_:) modifier has been applied to a parent.
         LandmarkList()
             .environmentObject(ModelData())
     }

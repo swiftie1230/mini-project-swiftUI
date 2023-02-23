@@ -9,9 +9,11 @@ import SwiftUI
 
 struct LandmarkDetail: View {
     @EnvironmentObject var modelData: ModelData
+    
     var landmark: Landmark
     
     var landmarkIndex: Int {
+        // instead of naming the argument and calling in, we can express the shortest, replacing by $0.
         modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
     }
     
@@ -29,6 +31,7 @@ struct LandmarkDetail: View {
                 HStack {
                     Text(landmark.name)
                         .font(.title)
+                    // provide a binding to the isFavorite property with the dollar sign ($).
                     FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
                 }
                 
