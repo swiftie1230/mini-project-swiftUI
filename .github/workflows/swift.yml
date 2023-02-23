@@ -1,0 +1,47 @@
+# This workflow will build a Swift project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
+
+
+#name: Run Test
+
+#on:
+  #push:
+    #branches: [ "main" ]
+  #pull_request:
+    #branches: [ "main" ]
+
+#jobs:
+  #build:
+
+    #runs-on: macos-latest
+
+    #steps:
+    #- uses: actions/checkout@v3
+    #- name: Build
+      #run: swift build -v
+    #- name: Run tests
+      #run: swift test -v
+name: CI-Test
+
+on: [push]
+
+jobs:
+  test:
+    name: Test
+    runs-on: macos-latest
+    strategy:
+        matrix:
+          destination: ['platform=iOS Simulator,OS=13.2.2,name=iPhone 11 Pro Max']
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build
+        run: |
+          xcodebuild clean build -project mini_project_swiftUI.xcodeproj -scheme mini_project_swiftUI -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+        env: 
+         destination: ${{ matrix.destination }}
+      - name: Test
+        run: |
+          xcodebuild clean test -project mini_project_swiftUI.xcodeproj -scheme mini_project_swiftUITests -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+        env: 
+         destination: ${{ matrix.destination }}
