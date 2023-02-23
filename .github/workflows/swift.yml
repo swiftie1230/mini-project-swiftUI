@@ -1,0 +1,30 @@
+# This workflow will build a Swift project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
+
+name: 🧪 Test Workflow
+on: push
+
+#env:
+ # DEVELOPER_DIR: /Applications/Xcode_14.0.app/Contents/Developer
+
+jobs:
+  test:
+    name: 🛠 Build and 🧪 Test
+    runs-on: macos-12
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: 🛠 Build
+        run: | # xcodebuild [-project <projectname>] -scheme <schemeName> [-destination <destinationspecifier>]... [-configuration <configurationname>] [-arch <architecture>]... [-sdk [<sdkname>|<sdkpath>]] [-showBuildSettings [-json]] [-showdestinations] [<buildsetting>=<value>]... [<buildaction>]...
+          xcodebuild \
+            -project mini_project_swiftUI.xcodeproj \
+            -scheme mini_project_swiftUI \
+            -destination 'platform=iOS Simulator,name=iPhone 14 Pro' \
+            build-for-testing
+      - name: 🧪 Test
+        run: | # xcodebuild [-project <projectname>] -scheme <schemeName> [-destination <destinationspecifier>]... [-configuration <configurationname>] [-arch <architecture>]... [-sdk [<sdkname>|<sdkpath>]] [-showBuildSettings [-json]] [-showdestinations] [<buildsetting>=<value>]... [<buildaction>]...
+          xcodebuild \
+            -project mini_project_swiftUI.xcodeproj \
+            -scheme mini_project_swiftUI \
+            -destination 'platform=iOS Simulator,name=iPhone 14 Pro' \
+            test-without-building
