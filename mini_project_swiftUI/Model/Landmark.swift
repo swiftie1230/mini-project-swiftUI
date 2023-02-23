@@ -26,6 +26,7 @@ struct Landmark: Hashable, Codable, Identifiable {
     var park: String
     var state: String
     var description: String
+    var isFavorite: Bool
     
     // private
     // : 선언된 괄호 -{} 안에서만 접근이 가능합니다.
