@@ -18,7 +18,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build
       run: |
-        xcodebuild build test -project miniCapstoneFront.xcodeproj -scheme miniCapstoneFront -destination "platform=iOS Simulator,name=iPhone 11"
+        xcodebuild build test -project miniProjectSwiftUI.xcodeproj -scheme miniProjectSwiftUI -destination "platform=iOS Simulator,name=iPhone 11"
     
     #- name: Run tests
       #run: | 
