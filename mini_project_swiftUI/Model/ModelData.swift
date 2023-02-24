@@ -16,6 +16,7 @@ final class ModelData: ObservableObject {
     // An observable object needs to publish any changes to its data, so that its subscribers can pick up the change.
     // publish 한 landmarks에 대하여 ObserveredObject 가 계속 지켜보면서 변화를 캐치하고 그 변화를 적용한다고 생각하면 된다.
     @Published var landmarks: [Landmark] = load("landmarkData.json")
+    @Published var profile = Profile.default
     
     // contains only the landmarks that have isFeatured set to true.
     var features: [Landmark] {
