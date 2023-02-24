@@ -10,6 +10,9 @@
 		B407373929A72DBC007E1304 /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = B407373829A72DBC007E1304 /* CategoryHome.swift */; };
 		B407373B29A73259007E1304 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B407373A29A73259007E1304 /* CategoryRow.swift */; };
 		B407373D29A734BD007E1304 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B407373C29A734BD007E1304 /* CategoryItem.swift */; };
+		B407373F29A74242007E1304 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B407373E29A74241007E1304 /* Profile.swift */; };
+		B407374229A74EF8007E1304 /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = B407374129A74EF8007E1304 /* ProfileHost.swift */; };
+		B407374429A74FE6007E1304 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B407374329A74FE6007E1304 /* ProfileSummary.swift */; };
 		B409414B29A5B76000A85CF2 /* mini_project_swiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409414A29A5B76000A85CF2 /* mini_project_swiftUIApp.swift */; };
 		B409414D29A5B76000A85CF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409414C29A5B76000A85CF2 /* ContentView.swift */; };
 		B409414F29A5B76300A85CF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B409414E29A5B76300A85CF2 /* Assets.xcassets */; };
@@ -23,12 +26,16 @@
 		B42DFA0229A65ADB0046D849 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42DFA0129A65ADB0046D849 /* LandmarkList.swift */; };
 		B42DFA0429A65F4E0046D849 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42DFA0329A65F4E0046D849 /* LandmarkDetail.swift */; };
 		B4BF093C29A6EE98006C2CD4 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF093B29A6EE98006C2CD4 /* FavoriteButton.swift */; };
+		B4C0671029A891660064AB1F /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C0670F29A891660064AB1F /* ProfileEditor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B407373829A72DBC007E1304 /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
 		B407373A29A73259007E1304 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		B407373C29A734BD007E1304 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
+		B407373E29A74241007E1304 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		B407374129A74EF8007E1304 /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
+		B407374329A74FE6007E1304 /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		B409414729A5B76000A85CF2 /* mini_project_swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mini_project_swiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B409414A29A5B76000A85CF2 /* mini_project_swiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mini_project_swiftUIApp.swift; sourceTree = "<group>"; };
 		B409414C29A5B76000A85CF2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +50,7 @@
 		B42DFA0129A65ADB0046D849 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		B42DFA0329A65F4E0046D849 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		B4BF093B29A6EE98006C2CD4 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		B4C0670F29A891660064AB1F /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,16 @@
 				B407373C29A734BD007E1304 /* CategoryItem.swift */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		B407374029A74ED2007E1304 /* Profiles */ = {
+			isa = PBXGroup;
+			children = (
+				B407374129A74EF8007E1304 /* ProfileHost.swift */,
+				B407374329A74FE6007E1304 /* ProfileSummary.swift */,
+				B4C0670F29A891660064AB1F /* ProfileEditor.swift */,
+			);
+			path = Profiles;
 			sourceTree = "<group>";
 		};
 		B409413E29A5B75F00A85CF2 = {
@@ -106,6 +124,7 @@
 		B42DF9FC29A657EE0046D849 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B407374029A74ED2007E1304 /* Profiles */,
 				B407373729A72DA6007E1304 /* Categories */,
 				B4BF093D29A6EF4B006C2CD4 /* Landmarks */,
 				B4BF093E29A6EF54006C2CD4 /* Helpers */,
@@ -118,6 +137,7 @@
 			children = (
 				B409416029A5F82600A85CF2 /* Landmark.swift */,
 				B409416229A5FA7300A85CF2 /* ModelData.swift */,
+				B407373E29A74241007E1304 /* Profile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -225,6 +245,8 @@
 				B409414D29A5B76000A85CF2 /* ContentView.swift in Sources */,
 				B409415B29A5F18C00A85CF2 /* MapView.swift in Sources */,
 				B409414B29A5B76000A85CF2 /* mini_project_swiftUIApp.swift in Sources */,
+				B407374229A74EF8007E1304 /* ProfileHost.swift in Sources */,
+				B407373F29A74242007E1304 /* Profile.swift in Sources */,
 				B4BF093C29A6EE98006C2CD4 /* FavoriteButton.swift in Sources */,
 				B407373929A72DBC007E1304 /* CategoryHome.swift in Sources */,
 				B42DFA0229A65ADB0046D849 /* LandmarkList.swift in Sources */,
@@ -234,6 +256,8 @@
 				B409416129A5F82600A85CF2 /* Landmark.swift in Sources */,
 				B42DFA0029A658790046D849 /* LandmarkRow.swift in Sources */,
 				B407373B29A73259007E1304 /* CategoryRow.swift in Sources */,
+				B4C0671029A891660064AB1F /* ProfileEditor.swift in Sources */,
+				B407374429A74FE6007E1304 /* ProfileSummary.swift in Sources */,
 				B409416329A5FA7300A85CF2 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
