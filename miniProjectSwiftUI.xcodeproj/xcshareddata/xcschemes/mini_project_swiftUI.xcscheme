@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B409414629A5B76000A85CF2"
-               BuildableName = "mini_project_swiftUI.app"
-               BlueprintName = "mini_project_swiftUI"
-               ReferencedContainer = "container:mini_project_swiftUI.xcodeproj">
+               BuildableName = "miniProjectSwiftUI.app"
+               BlueprintName = "miniProjectSwiftUI"
+               ReferencedContainer = "container:miniProjectSwiftUI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B409414629A5B76000A85CF2"
-            BuildableName = "mini_project_swiftUI.app"
-            BlueprintName = "mini_project_swiftUI"
-            ReferencedContainer = "container:mini_project_swiftUI.xcodeproj">
+            BuildableName = "miniProjectSwiftUI.app"
+            BlueprintName = "miniProjectSwiftUI"
+            ReferencedContainer = "container:miniProjectSwiftUI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B409414629A5B76000A85CF2"
-            BuildableName = "mini_project_swiftUI.app"
-            BlueprintName = "mini_project_swiftUI"
-            ReferencedContainer = "container:mini_project_swiftUI.xcodeproj">
+            BuildableName = "miniProjectSwiftUI.app"
+            BlueprintName = "miniProjectSwiftUI"
+            ReferencedContainer = "container:miniProjectSwiftUI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
